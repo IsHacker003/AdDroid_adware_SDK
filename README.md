@@ -14,7 +14,6 @@ For `build.gradle.kts`:
 implementation(project(":AdDroid-adware")) {
     transitive = true
 }
-
 ```
 Also add this in `settings.gradle`:
 ```
