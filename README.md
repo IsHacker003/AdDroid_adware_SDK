@@ -5,11 +5,16 @@ Your app needs to have minSdk >= 23 to use this SDK. Just add the dependency, th
 
 For `build.gradle`:
 ```
-implementation project(path: ":AdDroid-adware")
+implementation (project(path: ":AdDroid-adware")) {
+    transitive = true
+}
 ```
 For `build.gradle.kts`:
 ```
-implementation(project(":AdDroid-adware"))
+implementation(project(":AdDroid-adware")) {
+    transitive = true
+}
+
 ```
 Also add this in `settings.gradle`:
 ```
